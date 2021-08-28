@@ -8,7 +8,7 @@
 
 //Private api
 const api = {
-  key: '28fd15358cdecbc1a1dfef367e71acef',
+  key: 'Your Api Key',
   base: 'https://api.openweathermap.org/data/2.5/',
 }
 
