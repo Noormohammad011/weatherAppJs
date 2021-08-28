@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Temperature Hot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter a location for Weather ..." id='search'>
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-danger" id='btn'>Search</button>
+                </div>
+               
+            </div>
+            <p class="error text-white text-center"></p>
+        </form>
+        <section>
+            <div class="weather-status text-white text-center">
+                <div class="icon">
+                    <img alt="" class="weather-icon">
+                </div>
+                <div class="location">
+                    <h1 class="city"></h1>
+                    <h2 class="date"></h2>
+                </div>
+                <div class="current">
+                    <h3 class="temp"> <span></span></h3>
+                    <h3 class="weather"></h3>
+                    <h3 class="temp-range"></h3>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
