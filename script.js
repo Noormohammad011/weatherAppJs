@@ -1,11 +1,22 @@
+/*
+ * Title: Weather App
+ * Description: Weather App Manupulation
+ * Author: Noormohammad
+ * Date: 29/08/2021
+ *
+ */
+
+//Private api
 const api = {
   key: '28fd15358cdecbc1a1dfef367e71acef',
   base: 'https://api.openweathermap.org/data/2.5/',
 }
 
+//Decalaration
 const search = document.getElementById('search')
 const btn = document.getElementById('btn')
 
+//Fetchin Data
 const fetchData = async (value = 'Dhaka') => {
   try {
     const res = await fetch(
@@ -20,6 +31,7 @@ const fetchData = async (value = 'Dhaka') => {
 
 fetchData()
 
+//EventListener methods
 btn.addEventListener('click', (e) => {
   e.preventDefault()
   // Get search term
